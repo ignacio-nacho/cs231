@@ -1,0 +1,3 @@
+Ignacio Rodriguez-Cortes
+
+I will be using Kali through virtualbox running on my intel Mac. I have installed Kali and pinged google.com successfully.
