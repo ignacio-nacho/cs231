@@ -1,0 +1,22 @@
+Nacho Rodriguez-Cortes
+CS 231
+
+Note: All answers were carried out on a Mac. 
+
+Answers:
+
+1) 137.22.172.63 (Bonus: N/A; Are you able to do this if you don't have both connections active?) 
+
+2) nslookup `hostname`
+
+3) One can provide nslookup with an address to see the host name. (i.e. nslookup 137.22.172.63) 
+
+4) A simple way of doing this seems to involve using Apache. First I would copy the file to /var/www/html/ (cp file.txt /var/www/html/ and then start the apache service (service apache2 start). Then I could access the file through the browser by visiting the url (http://MY_KALI_IP/file.txt) or through the cli using the curl or wget command. (curl http://MY_KALI_IP/file.txt > file.txt) 
+
+5) sudo lsof -nP -iTCP:80 -sTCP:LISTEN (This command would be for looking specifically at port 80. Additionally, the use of sudo allows us to see the host even if it is the root user. 
+
+6) lsof -nP -iTCP -sTCP:LISTEN (This command would display all of the listening TCP ports for the current host. One could add the sudo command to show all of the hosts including root) 
+
+7) curl -o website https://example.com/ (Here the output from example.com would be saved in a file named website) 
+
+8) curl -I https://example.com/ 
